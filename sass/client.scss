@@ -1,0 +1,74 @@
+
+main {
+
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:30px;
+    p {
+        font-family: $Poppins;
+    }
+    
+}
+.white-background-client {
+    
+    background-color: white;
+    width: 20%;
+
+    .login-title {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 15px;
+   }
+
+  
+}
+
+.send-btn1 {
+
+    
+    font-family: $Poppins;
+    color:black;
+    width: 100%;
+    text-align: center;
+    display:block;
+    margin-top: 80px;
+   }
+
+.yellow-background-client {
+
+@extend .white-background-client;
+background-color: $yellow;
+
+    .register-title {
+        @extend .login-title;
+    }
+
+}
+
+.login-user {
+    font-size: 5rem;
+    color:$yellow;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}
+
+.register-user {
+
+    @extend .login-user;
+    color:black;
+}
+
+.login-label {
+
+    margin-right: 35px;
+}
+
+.send-btn2{
+    @extend .send-btn1;
+    margin-top:10px;
+    margin-bottom: 10px;
+}

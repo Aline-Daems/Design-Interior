@@ -1,0 +1,25 @@
+.body-service {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.white-bar {
+  width: 100%;
+  border: 5px solid white;
+}
+
+.flex2 {
+  width: 50%;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=services.css.map */

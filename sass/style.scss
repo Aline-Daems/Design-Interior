@@ -1,0 +1,471 @@
+$yellow: yellow;
+$grey: #ababab;
+$Poppins: 'Poppins', sans-serif;
+
+* {
+    margin: 0px;
+    padding:0px;
+  }
+  
+  body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  }
+
+  .body-index {
+  display:flex;
+  
+  }
+
+  .menu {
+
+    width:100%;
+  }
+  a {
+
+
+    &:link {
+      
+      text-decoration: none;
+    }
+  }
+  
+
+  
+  nav {
+
+    display: flex;
+
+    a {
+  
+      color: white;
+      margin: auto;
+      &:hover{
+        color:$yellow;
+      }
+    }
+  }
+  
+  
+  .logo {
+  
+    font-weight: bold;
+    color:white;
+    display:flex;
+    text-transform: uppercase;
+    margin: 30px;
+    
+  }
+  .yellow {
+  
+    color:$yellow;
+    text-transform: uppercase;
+  }
+  
+  .Medias {
+  
+  margin: auto;
+  padding-left: 150px;
+  font-size: 1rem;
+  
+  }
+  .instagram {
+  
+  color: $grey;
+  margin-right: 5px;
+  
+  }
+  
+  .google {
+  
+  color:  $grey;
+  margin-right: 5px;
+  }
+  
+  .facebook {
+  
+  color: $grey;
+  }
+  
+  
+  
+  .title{
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  
+  
+  }
+  
+  .part-one {
+  
+  color: $yellow;
+  margin-left: 20px; 
+  font-size: 7rem;
+  font-family: $Poppins;
+  height: 100px;
+  }
+  
+  .part-two {
+
+    @extend .part-one;
+    color:white;
+    margin-left: 160px;
+  
+  }
+  
+  .part-three {
+
+    @extend .part-one;
+  margin-left: 430px;
+  width: 90%;
+  z-index: 1;
+  
+  }
+  .arc {
+  
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(200deg);
+  float:left;
+  margin-left: -200px;
+  position: absolute;
+  
+    
+    p {
+  
+  color: white;
+  margin-top: 300px;
+  margin-right: 250px;
+  transform: rotate(160deg);
+  font-size: 1.5rem;
+  }
+  
+    a {
+  color: $yellow;
+  
+      &:link {
+    
+    text-decoration:none;
+    }
+  }
+}
+
+
+  .arr {
+  
+  color: white;
+  }
+  
+  .family {
+  
+  float:left;
+  width: 40%;
+  
+  z-index: 1
+  }
+  
+  .philosophy {
+  
+  background-color: white;
+  width: 50%;
+  
+  font-family: $Poppins;
+  
+  
+    
+    p  {
+  
+    margin-left: 25px; 
+    margin-right: 15px;
+    margin-top: 30px; 
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  
+  
+  }
+  
+    a {
+    
+    margin-left: 25px;
+    color: black;
+    
+  }
+  
+    h2  {
+  
+    
+    text-transform: uppercase;
+    
+    font-size: 1rem;
+    margin-top: 30px;
+    
+  }
+    .YellowSquare {
+  
+    color: $yellow;
+    margin-right: 10px;
+    margin-left: 2px;
+    
+    
+    
+  }
+}
+
+  
+  .container {
+  
+  display:flex;
+  margin-top:570px;
+  
+  }
+  
+ 
+  
+  .phone {
+  
+    width: 30%;
+    
+  }
+  
+  .right-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .catroom {
+  
+    height: 100%;
+  }
+  
+  .little-container {
+  
+    display: flex;
+    
+  }
+  .little-white-background{
+  
+    width: 50%;
+    background-color: white;
+    text-align: justify;
+    height:100%;
+  }
+  
+  .yellow-background {
+  
+  @extend .little-white-background;
+    
+    background-color: $yellow;
+    
+  }
+  
+  .sixteen {
+  
+   font-size: 2.5rem;
+   font-family:  $Poppins;
+   margin-left: 30px;
+  }
+  
+  .parameters {
+  
+    font-family: $Poppins;
+   margin-left: 30px;
+   font-size: 0.8rem;
+   margin-right: 50px;
+   margin-bottom:40px;
+  }
+  
+  .about {
+  
+  margin-top: 70px;
+  margin-left: 30px;
+  font-family: $Poppins;
+  color:black;
+ 
+    &:link {
+    text-decoration: none;
+    
+    } 
+  }
+  
+  .portfolio {
+    margin-top: 55px;
+    margin-left: 30px;
+    font-family:  $Poppins;
+    
+    
+  }
+
+  
+
+  @import 'services.scss';
+  @import 'contact.scss';
+  @import 'client.scss';
+  
+  
+  @media (max-width: 599px) {
+    .body-index {
+      flex-direction: column;
+    }
+
+    nav {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .logo {
+    width: 125px;
+    text-align: center;
+    
+  }
+
+  .Medias {
+
+    width: 100px;
+    padding-left:0;
+    text-align:center;
+    margin-top: 15px;
+    margin-bottom:15px;
+  }
+  .nav a {
+    margin-top:5px;
+  }
+
+  .part-one {
+
+    margin-left: 5px;
+    font-size: 3rem;
+    height:0%;
+    text-align: center;
+  }
+
+  .part-three{
+    width:100%;
+    text-align: center;
+  }
+  .catroom {
+    display:none;
+  
+  }
+
+  .black-background{
+    width:100%;
+  }
+  .little-white-background {
+    
+height: 0%;
+
+  }
+
+  .arc {
+
+    display:none;
+  }
+
+  .container {
+    margin-top:5%;
+    flex-direction:column;
+  }
+  .family{
+    width:100%;
+    margin-top:0%;
+
+
+  }
+  .philosophy{
+    width:100%;
+    margin-top:0%;
+    
+  }
+  .phone {
+
+    width: 100%;
+    margin-top:0%;
+  }
+
+  // SERVICES REPONSIVE \\
+
+  .body-service {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .white-background, .white-background2, .yellow-background1, .yellow-background2 {
+    width: 100%;
+  }
+
+  
+
+  .S1, .S2 {
+
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  // CONTACT RESPONSIVE \\ 
+
+  .flex4 {
+
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .flex5{
+    flex-direction: column;
+  }
+  .flex6 {
+    width:100%;
+  }
+
+  .white-background3{
+    width:100%;
+  }
+  .yellow-background3{
+    width:100%;
+  }
+  .S3 {
+    width:100%;
+  }
+
+  // CLIENT RESPONSIVE \\
+
+  main {
+
+    flex-direction: column;
+  }
+
+.white-background-client {
+
+  width: 100%;
+}
+
+  }
+  
